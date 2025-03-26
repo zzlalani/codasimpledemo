@@ -46,6 +46,21 @@ services:
       retries: 3
       start_period: 20s
 
+  echo-service-9:
+    build:
+      context: .
+    container_name: echo-service-9
+    environment:
+      - SERVER_PORT=8089
+    ports:
+      - "8089:8089"
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "--quiet", "http://localhost:8089/api/echo || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+
 networks:
   default:
     name: echo-network

@@ -2,7 +2,7 @@
 echo "Stopping Echo Service instances..."
 
 # Method 1: Find and kill processes by port
-for port in 8080 8081 8082; do
+for port in 8080 8081 8082 8089; do
   pid=$(lsof -ti:$port)
   if [ -n "$pid" ]; then
     echo "Stopping process on port $port (PID: $pid)"

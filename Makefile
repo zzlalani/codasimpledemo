@@ -44,7 +44,7 @@ test-endpoints: create-test-scripts
 create-test-scripts:
 	@echo '#!/bin/bash' > test-echo-api.sh
 	@echo 'echo "Testing Echo API endpoints..."' >> test-echo-api.sh
-	@echo 'for port in 8080 8081 8082; do' >> test-echo-api.sh
+	@echo 'for port in 8080 8081 8082 8089; do' >> test-echo-api.sh
 	@echo '  echo "Testing Echo API on port $${port}..."' >> test-echo-api.sh
 	@echo '  curl -s -X POST -H "Content-Type: application/json" -d '"'"'{"game":"Mobile Legends", "gamerID":"GYUTDTE", "points":20}'"'"' http://localhost:$${port}/api/echo' >> test-echo-api.sh
 	@echo '  echo -e "\n"' >> test-echo-api.sh

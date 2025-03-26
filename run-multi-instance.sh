@@ -14,4 +14,7 @@ echo "Started instance on port 8081"
 java -jar target/codasimpledemo-0.0.1-SNAPSHOT.jar --server.port=8082 > demo-service-8082.log 2>&1 &
 echo "Started instance on port 8082"
 
+java -jar target/codasimpledemo-0.0.1-SNAPSHOT.jar --server.port=8089 > demo-service-8089.log 2>&1 &
+echo "Started instance on port 8089"
+
 echo "All instances started! Check logs in demo-service-*.log files"
