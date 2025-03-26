@@ -8,28 +8,184 @@
 
  :: Spring Boot ::                (v3.4.3)
 
-2025-03-25 13:46:26 [main] INFO  c.z.c.CodasimpledemoApplication - Starting CodasimpledemoApplication v0.0.1-SNAPSHOT using Java 23.0.2 with PID 26156 (/Users/testuser/Projects/coda/codasimpledemo/target/codasimpledemo-0.0.1-SNAPSHOT.jar started by testuser in /Users/testuser/Projects/coda/codasimpledemo)
-2025-03-25 13:46:26 [main] INFO  c.z.c.CodasimpledemoApplication - No active profile set, falling back to 1 default profile: "default"
-2025-03-25 13:46:28 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
-2025-03-25 13:46:28 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-03-25 13:46:28 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-03-25 13:46:28 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-03-25 13:46:28 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1312 ms
-2025-03-25 13:46:28 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-2025-03-25 13:46:28 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2025-03-25 13:46:28 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8081 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
-
+2025-03-25 15:34:23 [main] INFO  c.z.c.CodasimpledemoApplication - Starting CodasimpledemoApplication v0.0.1-SNAPSHOT using Java 23.0.2 with PID 19651 (/Users/testuser/Projects/coda/codasimpledemo/target/codasimpledemo-0.0.1-SNAPSHOT.jar started by testuser in /Users/testuser/Projects/coda/codasimpledemo)
+2025-03-25 15:34:23 [main] INFO  c.z.c.CodasimpledemoApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-25 15:34:23 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-03-25 15:34:24 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-25 15:34:24 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-25 15:34:24 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-25 15:34:24 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 789 ms
+2025-03-25 15:34:24 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-03-25 15:34:24 [main] INFO  c.z.c.CodasimpledemoApplication - Started CodasimpledemoApplication in 1.614 seconds (process running for 2.053)
+2025-03-25 15:39:02 [http-nio-8081-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-25 15:39:02 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-25 15:39:02 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-03-25 15:39:02 [http-nio-8081-exec-2] INFO  c.z.c.controller.EchoController - Received request on port 8081
+2025-03-25 15:41:34 [http-nio-8081-exec-4] INFO  c.z.c.controller.EchoController - Received request on port 8081
+2025-03-25 15:44:03 [http-nio-8081-exec-7] INFO  c.z.c.controller.EchoController - Received request on port 8081: {test=request}
+2025-03-25 15:44:17 [http-nio-8081-exec-8] INFO  c.z.c.controller.EchoController - Received request on port 8081
+2025-03-25 17:13:34 [http-nio-8081-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'text/plain;charset=UTF-8' is not supported]
+2025-03-25 17:22:18 [http-nio-8081-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'text/plain;charset=UTF-8' is not supported]
+2025-03-25 20:17:44 [http-nio-8081-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'text/plain;charset=UTF-8' is not supported]
+2025-03-25 20:55:22 [http-nio-8081-exec-7] INFO  c.z.c.controller.EchoController - Received request on port 8081: {test=request}
+2025-03-25 20:55:23 [http-nio-8081-exec-9] INFO  c.z.c.controller.EchoController - Received request on port 8081: {test=request}
+2025-03-25 20:55:23 [http-nio-8081-exec-8] INFO  c.z.c.controller.EchoController - Received request on port 8081: {test=request}
+2025-03-25 20:57:04 [http-nio-8081-exec-1] INFO  c.z.c.controller.EchoController - Received request on port 8081: {test=request}
+2025-03-25 20:57:25 [http-nio-8081-exec-5] INFO  c.z.c.controller.EchoController - Received request on port 8081
+2025-03-25 20:57:25 [http-nio-8081-exec-4] INFO  c.z.c.controller.EchoController - Received request on port 8081
+2025-03-25 20:57:26 [http-nio-8081-exec-6] INFO  c.z.c.controller.EchoController - Received request on port 8081
+2025-03-25 20:57:26 [http-nio-8081-exec-7] INFO  c.z.c.controller.EchoController - Received request on port 8081
+2025-03-25 20:57:27 [http-nio-8081-exec-9] INFO  c.z.c.controller.EchoController - Received request on port 8081
+2025-03-25 20:57:27 [http-nio-8081-exec-8] INFO  c.z.c.controller.EchoController - Received request on port 8081
+2025-03-25 20:57:37 [http-nio-8081-exec-10] INFO  c.z.c.controller.EchoController - Received request on port 8081
+2025-03-25 20:57:45 [http-nio-8081-exec-1] INFO  c.z.c.controller.EchoController - Received request on port 8081: {test=request}
+2025-03-25 20:57:46 [http-nio-8081-exec-2] INFO  c.z.c.controller.EchoController - Received request on port 8081: {test=request}
+2025-03-25 20:57:47 [http-nio-8081-exec-3] INFO  c.z.c.controller.EchoController - Received request on port 8081: {test=request}
+2025-03-25 21:01:18 [http-nio-8081-exec-6] INFO  c.z.c.controller.EchoController - Received request on port 8081: {test=request}
+2025-03-25 21:05:15 [http-nio-8081-exec-9] INFO  c.z.c.controller.EchoController - Received request on port 8081: {test=request}
+2025-03-25 21:05:23 [http-nio-8081-exec-10] INFO  c.z.c.controller.EchoController - Received request on port 8081: {test=request}
+2025-03-25 21:05:24 [http-nio-8081-exec-1] INFO  c.z.c.controller.EchoController - Received request on port 8081: {test=request}
+2025-03-25 21:37:16 [http-nio-8081-exec-3] INFO  c.z.c.controller.EchoController - Received request on port 8081: {test=request}
+2025-03-25 21:37:30 [http-nio-8081-exec-4] INFO  c.z.c.controller.EchoController - Received request on port 8081: {test=request}
+2025-03-25 21:37:32 [http-nio-8081-exec-6] INFO  c.z.c.controller.EchoController - Received request on port 8081: {test=request}
+2025-03-25 21:43:24 [http-nio-8081-exec-8] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:43:24 [http-nio-8081-exec-9] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:43:24 [http-nio-8081-exec-10] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:43:24 [http-nio-8081-exec-5] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:43:24 [http-nio-8081-exec-7] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:43:24 [http-nio-8081-exec-6] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:43:24 [http-nio-8081-exec-2] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:43:24 [http-nio-8081-exec-1] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:43:24 [http-nio-8081-exec-3] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:43:24 [http-nio-8081-exec-4] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:51:48 [http-nio-8081-exec-9] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910708.N, id=2}
+2025-03-25 21:51:48 [http-nio-8081-exec-10] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910708.N, id=3}
+2025-03-25 21:51:49 [http-nio-8081-exec-7] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910709.N, id=5}
+2025-03-25 21:51:49 [http-nio-8081-exec-6] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910709.N, id=6}
+2025-03-25 21:51:49 [http-nio-8081-exec-2] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910709.N, id=7}
+2025-03-25 21:51:49 [http-nio-8081-exec-5] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910709.N, id=8}
+2025-03-25 21:51:49 [http-nio-8081-exec-8] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910709.N, id=9}
+2025-03-25 21:51:49 [http-nio-8081-exec-1] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910709.N, id=10}
+2025-03-25 21:51:49 [http-nio-8081-exec-3] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910709.N, id=11}
+2025-03-25 21:51:49 [http-nio-8081-exec-4] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910709.N, id=13}
+2025-03-25 21:51:49 [http-nio-8081-exec-9] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910709.N, id=14}
+2025-03-25 21:51:49 [http-nio-8081-exec-10] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910709.N, id=15}
+2025-03-25 21:51:49 [http-nio-8081-exec-7] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910709.N, id=16}
+2025-03-25 21:51:49 [http-nio-8081-exec-6] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910709.N, id=19}
+2025-03-25 21:51:49 [http-nio-8081-exec-2] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910709.N, id=20}
+2025-03-25 21:51:49 [http-nio-8081-exec-5] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910709.N, id=21}
+2025-03-25 21:51:49 [http-nio-8081-exec-8] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910709.N, id=22}
+2025-03-25 21:51:49 [http-nio-8081-exec-1] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910709.N, id=24}
+2025-03-25 21:51:50 [http-nio-8081-exec-3] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910710.N, id=25}
+2025-03-25 21:51:50 [http-nio-8081-exec-4] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910710.N, id=26}
+2025-03-25 21:51:50 [http-nio-8081-exec-9] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910710.N, id=27}
+2025-03-25 21:51:50 [http-nio-8081-exec-10] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910710.N, id=28}
+2025-03-25 21:51:50 [http-nio-8081-exec-7] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910710.N, id=29}
+2025-03-25 21:51:50 [http-nio-8081-exec-6] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910710.N, id=30}
+2025-03-25 21:52:07 [http-nio-8081-exec-5] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910727.N, id=2}
+2025-03-25 21:52:08 [http-nio-8081-exec-8] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910727.N, id=3}
+2025-03-25 21:52:09 [http-nio-8081-exec-1] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910729.N, id=27}
+2025-03-25 21:52:09 [http-nio-8081-exec-3] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910729.N, id=29}
+2025-03-25 21:52:09 [http-nio-8081-exec-4] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910729.N, id=30}
+2025-03-25 21:52:28 [http-nio-8081-exec-10] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910748.N, id=3}
+2025-03-25 21:52:28 [http-nio-8081-exec-7] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910748.N, id=4}
+2025-03-25 21:52:28 [http-nio-8081-exec-6] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910748.N, id=5}
+2025-03-25 21:52:28 [http-nio-8081-exec-2] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910748.N, id=6}
+2025-03-25 21:52:28 [http-nio-8081-exec-5] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910748.N, id=8}
+2025-03-25 21:52:28 [http-nio-8081-exec-8] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910748.N, id=9}
+2025-03-25 21:52:29 [http-nio-8081-exec-1] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910749.N, id=11}
+2025-03-25 21:52:29 [http-nio-8081-exec-3] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910749.N, id=14}
+2025-03-25 21:52:29 [http-nio-8081-exec-4] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910749.N, id=15}
+2025-03-25 21:52:29 [http-nio-8081-exec-9] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910749.N, id=16}
+2025-03-25 21:52:29 [http-nio-8081-exec-10] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910749.N, id=17}
+2025-03-25 21:52:29 [http-nio-8081-exec-7] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910749.N, id=18}
+2025-03-25 21:52:29 [http-nio-8081-exec-6] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910749.N, id=19}
+2025-03-25 21:52:29 [http-nio-8081-exec-2] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910749.N, id=20}
+2025-03-25 21:52:29 [http-nio-8081-exec-5] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910749.N, id=21}
+2025-03-25 21:52:29 [http-nio-8081-exec-8] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910749.N, id=22}
+2025-03-25 21:52:29 [http-nio-8081-exec-1] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910749.N, id=23}
+2025-03-25 21:52:29 [http-nio-8081-exec-3] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910749.N, id=24}
+2025-03-25 21:52:29 [http-nio-8081-exec-4] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910749.N, id=25}
+2025-03-25 21:52:29 [http-nio-8081-exec-9] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910749.N, id=26}
+2025-03-25 21:52:29 [http-nio-8081-exec-10] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910749.N, id=27}
+2025-03-25 21:52:29 [http-nio-8081-exec-7] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910749.N, id=28}
+2025-03-25 21:52:55 [http-nio-8081-exec-2] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910775.N, id=2}
+2025-03-25 21:52:56 [http-nio-8081-exec-5] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910776.N, id=29}
+2025-03-25 21:53:20 [http-nio-8081-exec-1] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910800.N, id=3}
+2025-03-25 21:53:20 [http-nio-8081-exec-3] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910800.N, id=5}
+2025-03-25 21:53:20 [http-nio-8081-exec-4] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910800.N, id=7}
+2025-03-25 21:53:20 [http-nio-8081-exec-9] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910800.N, id=8}
+2025-03-25 21:53:20 [http-nio-8081-exec-10] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910800.N, id=9}
+2025-03-25 21:53:20 [http-nio-8081-exec-7] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910800.N, id=10}
+2025-03-25 21:53:20 [http-nio-8081-exec-6] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910800.N, id=11}
+2025-03-25 21:53:20 [http-nio-8081-exec-2] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910800.N, id=12}
+2025-03-25 21:53:20 [http-nio-8081-exec-5] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910800.N, id=15}
+2025-03-25 21:53:20 [http-nio-8081-exec-8] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910800.N, id=18}
+2025-03-25 21:53:20 [http-nio-8081-exec-1] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910800.N, id=20}
+2025-03-25 21:53:20 [http-nio-8081-exec-3] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910800.N, id=21}
+2025-03-25 21:53:20 [http-nio-8081-exec-4] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910800.N, id=23}
+2025-03-25 21:53:20 [http-nio-8081-exec-9] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910800.N, id=24}
+2025-03-25 21:53:20 [http-nio-8081-exec-10] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910800.N, id=25}
+2025-03-25 21:53:20 [http-nio-8081-exec-7] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910800.N, id=26}
+2025-03-25 21:53:21 [http-nio-8081-exec-6] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910800.N, id=27}
+2025-03-25 21:53:21 [http-nio-8081-exec-2] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910801.N, id=28}
+2025-03-25 21:53:21 [http-nio-8081-exec-5] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20, timestamp=1742910801.N, id=30}
+2025-03-25 21:55:37 [http-nio-8081-exec-1] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:55:37 [http-nio-8081-exec-3] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:55:37 [http-nio-8081-exec-4] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:55:37 [http-nio-8081-exec-9] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:55:37 [http-nio-8081-exec-10] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:55:37 [http-nio-8081-exec-7] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:55:37 [http-nio-8081-exec-6] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:55:37 [http-nio-8081-exec-2] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:55:37 [http-nio-8081-exec-5] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:55:37 [http-nio-8081-exec-8] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:57:51 [http-nio-8081-exec-1] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:57:52 [http-nio-8081-exec-3] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:58:03 [http-nio-8081-exec-9] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:58:03 [http-nio-8081-exec-10] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:58:03 [http-nio-8081-exec-7] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:58:07 [http-nio-8081-exec-6] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:58:07 [http-nio-8081-exec-5] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:58:07 [http-nio-8081-exec-2] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:58:21 [http-nio-8081-exec-1] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:58:21 [http-nio-8081-exec-1] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:58:21 [http-nio-8081-exec-4] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:58:21 [http-nio-8081-exec-10] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:58:21 [http-nio-8081-exec-9] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:59:26 [http-nio-8081-exec-3] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:59:26 [http-nio-8081-exec-8] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:59:26 [http-nio-8081-exec-9] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:59:26 [http-nio-8081-exec-4] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:59:26 [http-nio-8081-exec-1] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:59:26 [http-nio-8081-exec-10] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:59:26 [http-nio-8081-exec-5] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:59:26 [http-nio-8081-exec-6] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:59:26 [http-nio-8081-exec-2] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:59:26 [http-nio-8081-exec-7] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:59:31 [http-nio-8081-exec-9] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:59:31 [http-nio-8081-exec-4] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:59:31 [http-nio-8081-exec-3] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:59:31 [http-nio-8081-exec-1] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:59:31 [http-nio-8081-exec-8] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:59:31 [http-nio-8081-exec-5] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:59:31 [http-nio-8081-exec-4] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:59:31 [http-nio-8081-exec-3] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:59:31 [http-nio-8081-exec-6] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:59:31 [http-nio-8081-exec-5] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:59:35 [http-nio-8081-exec-7] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:59:35 [http-nio-8081-exec-2] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:59:35 [http-nio-8081-exec-9] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:59:35 [http-nio-8081-exec-4] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:59:35 [http-nio-8081-exec-3] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:59:35 [http-nio-8081-exec-1] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:59:35 [http-nio-8081-exec-8] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:59:35 [http-nio-8081-exec-10] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:59:35 [http-nio-8081-exec-6] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 21:59:35 [http-nio-8081-exec-5] INFO  c.z.c.controller.EchoController - Received request on port 8081: {game=Mobile Legends, gamerID=GYUTDTE, points=20}
+2025-03-25 23:13:45 [http-nio-8081-exec-9] INFO  c.z.c.controller.EchoController - Received request on port 8081: {test=request}
+2025-03-25 23:20:08 [http-nio-8081-exec-3] INFO  c.z.c.controller.EchoController - Received request on port 8081: {}
+2025-03-25 23:21:01 [http-nio-8081-exec-8] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'text/plain;charset=UTF-8' is not supported]
+2025-03-25 23:30:19 [http-nio-8081-exec-6] INFO  c.z.c.controller.EchoController - Received request on port 8081: [{game=Mobile Legends, gamerID=GYUTDTE, points=20}, {game=Mobile Legends, gamerID=GYUTDTE, points=20}]
+2025-03-26 11:12:17 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-26 11:12:19 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete

@@ -1,0 +1,52 @@
+version: '3.8'
+
+services:
+  echo-service-1:
+    build:
+      context: .
+    container_name: echo-service-1
+    environment:
+      - SERVER_PORT=8080
+    ports:
+      - "8080:8080"
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "--quiet", "http://localhost:8080/api/echo || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+
+  echo-service-2:
+    build:
+      context: .
+    container_name: echo-service-2
+    environment:
+      - SERVER_PORT=8081
+    ports:
+      - "8081:8081"
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "--quiet", "http://localhost:8081/api/echo || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+
+  echo-service-3:
+    build:
+      context: .
+    container_name: echo-service-3
+    environment:
+      - SERVER_PORT=8082
+    ports:
+      - "8082:8082"
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "--quiet", "http://localhost:8082/api/echo || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+
+networks:
+  default:
+    name: echo-network
+    external: true
